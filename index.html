@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <style>
+    BODY {
+  align-items: center;
+  justify-content: center;
+  background: white;
+  font-family: Georgia;
+  }
+
+H1 {
+  font-size: 30px;
+  font-weight: normal;
+  cursor: pointer;
+  text-shadow: 0 0 15px #999;
+  color: transparent;
+  transition: all .5s;
+  }
+  H1:hover {
+    text-shadow: 0 0 0px #333;
+    cursor: pointer;
+    }
+  {
+   </style>
+  <script>
+function func(){
+var n;
+n=document.getElementById("a_znach").value;
+n=n+1;
+document.getElementById("a").innerHTML ="<h1>"+"Имя мне легион, ибо нас много "+"<br>"+ n+"</h1>";
+n=Number(document.getElementById("a_znach").value);
+n=n+1;
+document.getElementById("a").innerHTML = document.getElementById("a").innerHTML + "<h1>"+"Имя мне легион, ибо нас много "+"<br>"+ n+"</h1>";
+}
+</script>
+  </head>
+  <body>
+    <h1>Hello Plunker!</h1>
+    n=<input type="text" value="0" id="a_znach">
+<br>
+<br>
+<button onclick="func()">Надо нажать</button>
+<br>
+<br>
+<div id="a"></div>
+  </body>
+</html>
