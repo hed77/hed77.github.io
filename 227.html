@@ -11,7 +11,6 @@
   background: white;
   font-family: Georgia;
   }
-
 H1 {
   font-size: 30px;
   font-weight: normal;
@@ -35,7 +34,7 @@ H1 {
  function func2(){
 var r;
  r=Number(document.getElementById("b_znach").value);
- document.getElementById("b").innerHTML ="<h1>"+"Диаметр"+"<br>"+ 2*3.14*r +"</h1>";
+ document.getElementById("b").innerHTML ="<h1>"+"Диаметр"+"<br>"+ 2*r +"</h1>";
  }
   function func3(){
 var h;
@@ -47,8 +46,23 @@ var h;
  var x;
  x=Number(document.getElementById("N").value);
  document.getElementById("l").innerHTML ="<h1>"+"Площадь бока"+"<br>"+ x*x +"</h1>";
- document.getElementById("l").innerHTML ="<h1>"+"П"+"<br>"+ x*x +"</h1>";
+ x=Number(document.getElementById("N").value);
+ document.getElementById("l").innerHTML = document.getElementById("l").innerHTML + "<h1>"+"Объём"+"<br>"+ x*x*x +"</h1>";
  }
+   function func5(){
+ var C;
+ C=Number(document.getElementById("G").value);
+ document.getElementById("k").innerHTML ="<h1>"+""+"<br>"+ 2*C*2*3.14 +"</h1>";
+ C=Number(document.getElementById("G").value);
+ document.getElementById("k").innerHTML = document.getElementById("k").innerHTML + "<h1>"+""+"<br>"+ C*2*3.14 +"</h1>";
+ }
+    function func6(){
+ var X;
+ X=Number(document.getElementById("hhh").value);
+ y=Number(document.getElementById("hhr").value);
+ document.getElementById("J").innerHTML ="<h1>"+"z="+"<br>"+ (X*X*X) - (2.5*X*y)+(1.78*X*X)-(2.5*y)+1 +"</h1>";
+ }
+ 
  </script>
  </head>
  <body>
@@ -60,7 +74,7 @@ var h;
   Радиус r=<input type="text" value="1" id="b_znach">
   <button onclick="func2()">1.26</button>
   <div id="b"></div> 
-<h1>Задача 1.27</h1>
+  <h1>Задача 1.27</h1>
   Высота h=<input type="text" value="1" id="hhhhhhh">
   <button onclick="func3()">1.27</button>
   <div id="lalalalal"></div> 
@@ -68,4 +82,13 @@ var h;
   Длина ребра x=<input type="text" value="3" id="N">
   <button onclick="func4()">1.28</button>
   <div id="l"></div> 
+  <h1>Задача 1.29</h1>
+  Длина ребра C =<input type="text" value="3" id="G">
+  <button onclick="func5()">1.29</button>
+  <div id="k"></div> 
+  <h1>Задача 1.30</h1>
+  X =<input type="text" value="3" id="hhh">
+  y =<input type="text" value="3" id="hhr">
+  <button onclick="func6()">1.30</button>
+  <div id="J"></div> 
  </html>
