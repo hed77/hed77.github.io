@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <style>
+    BODY {
+  align-items: center;
+  justify-content: center;
+  background: white;
+  font-family: Georgia;
+  }
+H1 {
+  font-size: 30px;
+  font-weight: normal;
+  cursor: pointer;
+  text-shadow: 0 0 15px #999;
+  color: transparent;
+  transition: all .5s;
+  }
+  H1:hover {
+    text-shadow: 0 0 0px #333;
+    cursor: pointer;
+    }
+  {
+   </style>
+ <script> 
+ function func1(){ 
+ var a;
+ a=Number(document.getElementById("a_znach").value);
+ document.getElementById("kont_a").innerHTML ="<h1>"+"Периметр"+"<br>"+ a*4+"</h1>";
+ }
+ function func2(){
+var r;
+ r=Number(document.getElementById("b_znach").value);
+ document.getElementById("b").innerHTML ="<h1>"+"Диаметр"+"<br>"+ 2*r +"</h1>";
+ }
+  function func3(){
+var h;
+ h=Number(document.getElementById("hhhhhhh").value);
+ var distance =Math.sqrt((6350+h)*(6350+h)-6350*6350);
+ document.getElementById("lalalalal").innerHTML ="<h1>"+"Расстояние до линии горизонта"+"<br>"+ distance +"</h1>";
+ }
+  function func4(){
+ var x;
+ x=Number(document.getElementById("N").value);
+ document.getElementById("l").innerHTML ="<h1>"+"Площадь бока"+"<br>"+ x*x +"</h1>";
+ x=Number(document.getElementById("N").value);
+ document.getElementById("l").innerHTML = document.getElementById("l").innerHTML + "<h1>"+"Объём"+"<br>"+ x*x*x +"</h1>";
+ }
+   function func5(){
+ var C;
+ C=Number(document.getElementById("G").value);
+ document.getElementById("k").innerHTML ="<h1>"+""+"<br>"+ 2*C*2*3.14 +"</h1>";
+ C=Number(document.getElementById("G").value);
+ document.getElementById("k").innerHTML = document.getElementById("k").innerHTML + "<h1>"+""+"<br>"+ C*2*3.14 +"</h1>";
+ }
+    function func6(){
+ var X;
+ X=Number(document.getElementById("hhh").value);
+ y=Number(document.getElementById("hhr").value);
+ document.getElementById("J").innerHTML ="<h1>"+" "+"<br>"+ (X+y)/2 +"</h1>";
+ X=Number(document.getElementById("hhh").value);
+ y=Number(document.getElementById("hhr").value);
+ document.getElementById("J").innerHTML = document.getElementById("J").innerHTML +"<h1>"+" "+"<br>"+ Math.sqrt(X*y) +"</h1>";
+ }
+   function func7(){
+ var P;
+ P=Number(document.getElementById("hhj").value);
+ T=Number(document.getElementById("hhk").value);
+ document.getElementById("Q").innerHTML ="<h1>"+" "+"<br>"+ P/T +"</h1>";
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ </script>
+ </head>
+ <body>
+  <h1>Задача 1.25</h1>
+  Сторона квадрата a=<input type="text" value="4" id="a_znach">
+  <button onclick="func1()">1.25</button>
+  <div id="kont_a"></div>
+  <h1>Задача 1.26</h1>
+  Радиус r=<input type="text" value="1" id="b_znach">
+  <button onclick="func2()">1.26</button>
+  <div id="b"></div> 
+  <h1>Задача 1.27</h1>
+  Высота h=<input type="text" value="1" id="hhhhhhh">
+  <button onclick="func3()">1.27</button>
+  <div id="lalalalal"></div> 
+  <h1>Задача 1.28</h1>
+  Длина ребра x=<input type="text" value="3" id="N">
+  <button onclick="func4()">1.28</button>
+  <div id="l"></div> 
+  <h1>Задача 1.29</h1>
+  Длина ребра C =<input type="text" value="3" id="G">
+  <button onclick="func5()">1.29</button>
+  <div id="k"></div> 
+  <h1>Задача 1.31</h1>
+  X =<input type="text" value="3" id="hhh">
+  y =<input type="text" value="8" id="hhr">
+  <button onclick="func6()">1.31</button>
+  <div id="J"></div> 
+  <h1>Задача 1.32</h1>
+  Масса P =<input type="text" value="50" id="hhj">
+  Объём T =<input type="text" value="2" id="hhk">
+  <button onclick="func7()">1.32</button>
+  <div id="Q"></div> 
+ </html>
