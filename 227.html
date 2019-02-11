@@ -60,8 +60,53 @@ var h;
  var X;
  X=Number(document.getElementById("hhh").value);
  y=Number(document.getElementById("hhr").value);
- document.getElementById("J").innerHTML ="<h1>"+"z="+"<br>"+ (X*X*X) - (2.5*X*y)+(1.78*X*X)-(2.5*y)+1 +"</h1>";
+ document.getElementById("J").innerHTML ="<h1>"+" "+"<br>"+ (X+y)/2 +"</h1>";
+ X=Number(document.getElementById("hhh").value);
+ y=Number(document.getElementById("hhr").value);
+ document.getElementById("J").innerHTML = document.getElementById("J").innerHTML +"<h1>"+" "+"<br>"+ Math.sqrt(X*y) +"</h1>";
  }
+   function func7(){
+ var P;
+ P=Number(document.getElementById("hhj").value);
+ T=Number(document.getElementById("hhk").value);
+ document.getElementById("Q").innerHTML ="<h1>"+" "+"<br>"+ P/T +"</h1>";
+ }
+ 
+    function func8(){
+ var x;
+ x=Number(document.getElementById("35a").value);
+ y=Number(document.getElementById("35b").value);
+ document.getElementById("35").innerHTML ="<h1>"+"Гипотенуза "+"<br>"+ Math.sqrt(x*x+y*y) +"</h1>";
+ }
+ 
+    function func9(){
+ var r;
+ r=Number(document.getElementById("36a").value);
+ R=Number(document.getElementById("36b").value);
+ document.getElementById("36").innerHTML ="<h1>"+"Площадь кольца "+"<br>"+ 3.14*(R*R-r*r) +"</h1>";
+ }
+
+     function func10(){
+ var x;
+ x=Number(document.getElementById("37a").value);
+ y=Number(document.getElementById("37b").value);
+ b = Math.sqrt(x*x+y*y)+x+y
+ document.getElementById("37").innerHTML ="<h1>"+"Периметр треугольника "+"<br>"+ b +"</h1>";
+ }
+ 
+  function func11(){
+ var x;
+ x=Number(document.getElementById("38a").value);
+ y=Number(document.getElementById("38b").value);
+ document.getElementById("37").innerHTML ="<h1>"+"Периметр треугольника "+"<br>"+ b +"</h1>";
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
  </script>
  </head>
@@ -86,9 +131,34 @@ var h;
   Длина ребра C =<input type="text" value="3" id="G">
   <button onclick="func5()">1.29</button>
   <div id="k"></div> 
-  <h1>Задача 1.30</h1>
+  <h1>Задача 1.31</h1>
   X =<input type="text" value="3" id="hhh">
-  y =<input type="text" value="3" id="hhr">
-  <button onclick="func6()">1.30</button>
+  y =<input type="text" value="8" id="hhr">
+  <button onclick="func6()">1.31</button>
   <div id="J"></div> 
+  <h1>Задача 1.32</h1>
+  Масса P =<input type="text" value="50" id="hhj">
+  Объём T =<input type="text" value="2" id="hhk">
+  <button onclick="func7()">1.32</button>
+  <div id="Q"></div>
+    <h1>Задача 1.35</h1>
+  Катет 1 x =<input type="text" value="3" id="35a">
+  Катет 2 y =<input type="text" value="4" id="35b">
+  <button onclick="func8()">1.35</button>
+  <div id="35"></div>
+    <h1>Задача 1.36</h1>
+  Внутренний радиус r =<input type="text" value="4" id="36a">
+  Внешний радиус R =<input type="text" value="7" id="36b">
+  <button onclick="func9()">1.36</button>
+  <div id="36"></div>
+      <h1>Задача 1.37</h1>
+  Катет 1 x =<input type="text" value="3" id="37a">
+  Катет 2 y =<input type="text" value="4" id="37b">
+  <button onclick="func10()">1.37</button>
+  <div id="37"></div>
+        <h1>Задача 1.37</h1>
+  Основание x =<input type="text" value="3" id="38a">
+  Высота y =<input type="text" value="4" id="38b">
+  <button onclick="func11()">1.38</button>
+  <div id="38"></div>
  </html>
