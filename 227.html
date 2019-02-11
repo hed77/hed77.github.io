@@ -85,7 +85,6 @@ var h;
  R=Number(document.getElementById("36b").value);
  document.getElementById("36").innerHTML ="<h1>"+"Площадь кольца "+"<br>"+ 3.14*(R*R-r*r) +"</h1>";
  }
-
      function func10(){
  var x;
  x=Number(document.getElementById("37a").value);
@@ -94,11 +93,13 @@ var h;
  document.getElementById("37").innerHTML ="<h1>"+"Периметр треугольника "+"<br>"+ b +"</h1>";
  }
  
-  function func11(){
- var x;
- x=Number(document.getElementById("38a").value);
- y=Number(document.getElementById("38b").value);
- document.getElementById("37").innerHTML ="<h1>"+"Периметр треугольника "+"<br>"+ b +"</h1>";
+         function func11(){
+ var a;
+ a=Number(document.getElementById("38a").value);
+ b=Number(document.getElementById("38b").value);
+ h=Number(document.getElementById("38h").value);
+ m = a+b+2*Math.sqrt(h*h+(a-b)*(a-b)/4)
+ document.getElementById("38").innerHTML ="<h1>"+"Периметр трапеции "+"<br>"+ m +"</h1>";
  }
  
  
@@ -156,9 +157,10 @@ var h;
   Катет 2 y =<input type="text" value="4" id="37b">
   <button onclick="func10()">1.37</button>
   <div id="37"></div>
-        <h1>Задача 1.37</h1>
-  Основание x =<input type="text" value="3" id="38a">
-  Высота y =<input type="text" value="4" id="38b">
+        <h1>Задача 1.38</h1>
+  Большее основание =<input type="text" value="6" id="38a">
+  Меньшее основание =<input type="text" value="4" id="38b">
+  Высота =<input type="text" value="3" id="38h">
   <button onclick="func11()">1.38</button>
   <div id="38"></div>
  </html>
