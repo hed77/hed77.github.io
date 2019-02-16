@@ -134,12 +134,14 @@ var h;
  
  a=Number(document.getElementById("41a").value);
  b=(a-(a-a%100)-a%10)/10
- m=b+a%10
+ f=(a-b-a%10)/100
+ m=b+a%10+f
  document.getElementById("41").innerHTML =document.getElementById("41").innerHTML+  "<h1>"+"Сумма его цифр "+"<br>"+ m +"</h1>";
  
  a=Number(document.getElementById("41a").value);
  b=(a-(a-a%100)-a%10)/10
- m=b*a%10
+ f=(a-b-a%10)/100
+ m=b*a%10*f
  document.getElementById("41").innerHTML = document.getElementById("41").innerHTML+ "<h1>"+"Произведение его цифр "+"<br>"+ m +"</h1>";
  }
  
