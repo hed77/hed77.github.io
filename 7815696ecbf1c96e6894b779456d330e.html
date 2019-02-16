@@ -72,13 +72,79 @@ var h;
  document.getElementById("Q").innerHTML ="<h1>"+" "+"<br>"+ P/T +"</h1>";
  }
  
+    function func8(){
+ var x;
+ x=Number(document.getElementById("35a").value);
+ y=Number(document.getElementById("35b").value);
+ document.getElementById("35").innerHTML ="<h1>"+"Гипотенуза "+"<br>"+ Math.sqrt(x*x+y*y) +"</h1>";
+ }
+ 
+    function func9(){
+ var r;
+ r=Number(document.getElementById("36a").value);
+ R=Number(document.getElementById("36b").value);
+ document.getElementById("36").innerHTML ="<h1>"+"Площадь кольца "+"<br>"+ 3.14*(R*R-r*r) +"</h1>";
+ }
+     function func10(){
+ var x;
+ x=Number(document.getElementById("37a").value);
+ y=Number(document.getElementById("37b").value);
+ b = Math.sqrt(x*x+y*y)+x+y
+ document.getElementById("37").innerHTML ="<h1>"+"Периметр треугольника "+"<br>"+ b +"</h1>";
+ }
+ 
+         function func11(){
+ var a;
+ a=Number(document.getElementById("38a").value);
+ b=Number(document.getElementById("38b").value);
+ h=Number(document.getElementById("38h").value);
+ m = a+b+2*Math.sqrt(h*h+(a-b)*(a-b)/4)
+ document.getElementById("38").innerHTML ="<h1>"+"Периметр трапеции "+"<br>"+ m +"</h1>";
+ }
+  function func12(){
+ var a;
+ a=Number(document.getElementById("39a").value);
+ document.getElementById("39").innerHTML ="<h1>"+"Число десятков "+"<br>"+ (a-(a)%10)/10  +"</h1>";
+ 
+ a=Number(document.getElementById("39a").value);
+ document.getElementById("39").innerHTML = document.getElementById("39").innerHTML + "<h1>"+"Число едениц "+"<br>"+ a%10 +"</h1>";
+ 
+ a=Number(document.getElementById("39a").value);
+ var n =(a-a%10)/10+a%10;
+ document.getElementById("39").innerHTML = document.getElementById("39").innerHTML + "<h1>"+"Сумма его цифр "+"<br>"+ n +"</h1>";
+ 
+ a=Number(document.getElementById("39a").value);
+ document.getElementById("39").innerHTML = document.getElementById("39").innerHTML  + "<h1>"+"Произведение его цифр "+"<br>"+ ((a-(a)%10)/10)*(a%10) +"</h1>";
+ }
+ 
+ function func13(){
+ var a;
+ a=Number(document.getElementById("40a").value);
+ var n =a%10*10+(a-a%10)/10
+ document.getElementById("40").innerHTML ="<h1>"+" "+"<br>"+ n  +"</h1>";
+ }
+  function func14(){
+ var a;
+ a=Number(document.getElementById("41a").value);
+ b=(a-(a-a%100)-a%10)/10
+ document.getElementById("41").innerHTML ="<h1>"+"Число десятков "+"<br>"+ b +"</h1>";
+ 
+ a=Number(document.getElementById("41a").value);
+ document.getElementById("41").innerHTML = document.getElementById("41").innerHTML + "<h1>"+"Число едениц "+"<br>"+ a%10 +"</h1>";
+ 
+ a=Number(document.getElementById("41a").value);
+ b=(a-(a-a%100)-a%10)/10
+ m=b+a%10
+ document.getElementById("41").innerHTML =document.getElementById("41").innerHTML+  "<h1>"+"Сумма его цифр "+"<br>"+ m +"</h1>";
+ 
+ a=Number(document.getElementById("41a").value);
+ b=(a-(a-a%100)-a%10)/10
+ m=b*a%10
+ document.getElementById("41").innerHTML = document.getElementById("41").innerHTML+ "<h1>"+"Произведение его цифр "+"<br>"+ m +"</h1>";
+ }
  
  
  
- 
- 
- 
-
  
  
  </script>
@@ -113,5 +179,38 @@ var h;
   Масса P =<input type="text" value="50" id="hhj">
   Объём T =<input type="text" value="2" id="hhk">
   <button onclick="func7()">1.32</button>
-  <div id="Q"></div> 
+  <div id="Q"></div>
+    <h1>Задача 1.35</h1>
+  Катет 1 x =<input type="text" value="3" id="35a">
+  Катет 2 y =<input type="text" value="4" id="35b">
+  <button onclick="func8()">1.35</button>
+  <div id="35"></div>
+    <h1>Задача 1.36</h1>
+  Внутренний радиус r =<input type="text" value="4" id="36a">
+  Внешний радиус R =<input type="text" value="7" id="36b">
+  <button onclick="func9()">1.36</button>
+  <div id="36"></div>
+      <h1>Задача 1.37</h1>
+  Катет 1 x =<input type="text" value="3" id="37a">
+  Катет 2 y =<input type="text" value="4" id="37b">
+  <button onclick="func10()">1.37</button>
+  <div id="37"></div>
+        <h1>Задача 1.38</h1>
+  Большее основание =<input type="text" value="6" id="38a">
+  Меньшее основание =<input type="text" value="4" id="38b">
+  Высота =<input type="text" value="3" id="38h">
+  <button onclick="func11()">1.38</button>
+  <div id="38"></div>
+    <h1>Задача 2.10</h1>
+  Двухзначное число =<input type="text" value="26" id="39a">
+  <button onclick="func12()">2.10</button>
+  <div id="39"></div>
+  <h1>Задача 2.11</h1>
+  Двухзначное число =<input type="text" value="34" id="40a">
+  <button onclick="func13()">2.11</button>
+  <div id="40"></div>
+    <h1>Задача 2.12</h1>
+  Трехзначное число =<input type="text" value="123" id="41a">
+  <button onclick="func14()">2.12</button>
+  <div id="41"></div>
  </html>
